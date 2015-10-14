@@ -21,7 +21,7 @@ var gulp = require('gulp');
 var oghliner = require('./index.js');
 var mocha = require('gulp-mocha');
 
-gulp.task('default', ['build', 'offline']);
+gulp.task('default', ['test', 'build', 'offline']);
 
 
 var testDirs = ['test'];
