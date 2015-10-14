@@ -8,7 +8,7 @@ describe('Array', function() {
   });
   descript('some failing test', function() {
     it('should fail', function () {
-      assert.equal(-1, [1,2,3].indexOf(1));
+      assert.not.equal(-1, [1,2,3].indexOf(1));
     });
   });
 });
