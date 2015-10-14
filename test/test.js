@@ -5,6 +5,8 @@ describe('Array', function() {
       assert.equal(-1, [1,2,3].indexOf(5));
       assert.equal(-1, [1,2,3].indexOf(0));
     });
+  });
+  descript('some failing test', function() {
     it('should fail', function () {
       assert.equal(-1, [1,2,3].indexOf(1));
     });
