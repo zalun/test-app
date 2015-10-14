@@ -19,8 +19,15 @@
 var connect = require('gulp-connect');
 var gulp = require('gulp');
 var oghliner = require('./index.js');
+var mocha = require('gulp-mocha');
 
 gulp.task('default', ['build', 'offline']);
+
+
+var testDirs = ['test'];
+gulp.task('test', function(callback) {
+  return gulp.src(testDirs, {read: false}).pipe(mocha({reporter: 'nyan'}));
+});
 
 gulp.task('build', function(callback) {
   return gulp.src('app/**').pipe(gulp.dest('dist'));
