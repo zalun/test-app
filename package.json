@@ -26,5 +26,9 @@
     "travis-ci": "^2.0.3",
     "travis-encrypt": "^1.1.1",
     "write-yaml": "^0.2.1"
+  },
+  "devDependencies": {
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.3"
   }
 }
