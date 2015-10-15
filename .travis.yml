@@ -10,6 +10,8 @@ install: npm install
 before_script:
   - 'git config --global user.name "Travis-CI"'
   - 'git config --global user.email "pzalewa@mozilla.com"'
-script: gulp
+script: 
+    mocha
+    gulp
 after_success:
   - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] && gulp deploy'

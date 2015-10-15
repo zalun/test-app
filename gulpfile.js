@@ -25,7 +25,7 @@ var paths = {
   tests: ['./test']
 };
 
-gulp.task('default', ['test', 'build', 'offline']);
+gulp.task('default', ['build', 'offline']);
 
 gulp.task('test', function() {
   return gulp.src('./test/*', {read: false}).pipe(mocha({reporter: 'nyan'}));
